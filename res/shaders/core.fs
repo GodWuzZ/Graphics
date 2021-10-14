@@ -8,6 +8,6 @@ uniform sampler2D texture0;
 void main()
 {
 	// color = ourColor;
-	// color = vec4(vertexColor,1.0f);
-	color = texture(texture0,ourTextCoord);
+	color = vec4(vertexColor,1.0f);
+	// color = texture(texture0,ourTextCoord);
 };

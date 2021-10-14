@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\projects\VS\Graphics_01\External Libraries\glew-2.1.0\include;D:\projects\VS\Graphics_01\External Libraries\glfw-3.3.4.bin.WIN32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\projects\VS\Graphics_01\External Libraries\glew-2.1.0\include;D:\projects\VS\Graphics_01\External Libraries\glfw-3.3.4.bin.WIN32\include;D:\projects\VS\Graphics_01\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,12 +144,14 @@
   <ItemGroup>
     <ClCompile Include="Graphics_01.cpp" />
     <ClCompile Include="Graphics_02.cpp" />
+    <ClCompile Include="Graphics_03.cpp" />
     <ClCompile Include="SOIL2\image_DXT.c" />
     <ClCompile Include="SOIL2\image_helper.c" />
     <ClCompile Include="SOIL2\SOIL2.c" />
     <ClCompile Include="SOIL2\wfETC.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="SOIL2\image_DXT.h" />

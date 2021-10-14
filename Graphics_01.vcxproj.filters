@@ -45,6 +45,9 @@
     <ClCompile Include="SOIL2\wfETC.c">
       <Filter>源文件\SOIL2</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics_03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -103,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="SOIL2\wfETC.h">
       <Filter>源文件\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

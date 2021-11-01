@@ -9,18 +9,6 @@
 //#include "Shader.h"
 //
 //const GLint WIDTH = 800, HEIGHT = 600;
-////const GLchar *vertexShaderCode = "#version 330 core\n"
-////"layout(location = 0) in vec3 position;\n"
-////"void main()\n"
-////"{\n"
-////"gl_Position = vec4(position,1.0f);\n"
-////"}";
-////const GLchar *fragmentShaderCode = "#version 330 core\n"
-////"out vec4 color;\n"
-////"void main()\n"
-////"{\n"
-////"color = vec4(1.0f,0.5f,0.2f,1.0f);\n"
-////"}";
 //
 //int main() {
 //	glfwInit();
@@ -30,7 +18,7 @@
 //	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 //	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 //
-//	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "LEZ", nullptr, nullptr);
+//	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "GOD MA", nullptr, nullptr);
 //	// next two lines are for mac retina display
 //	int screenWidth, screenHeight;
 //	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
@@ -48,67 +36,8 @@
 //		return -1;
 //	}
 //
-//	//import and compile the shader
-//	/*GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-//	glShaderSource(vertexShader, 1, &vertexShaderCode, NULL);
-//	glCompileShader(vertexShader);
-//	
-//	GLint success;
-//	GLchar infoLog[512];
-//	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-//	if (!success) {
-//		glGetShaderInfoLog(vertexShader, 512, NULL,infoLog);
-//		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-//	}
-//
-//	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-//	glShaderSource(fragmentShader, 1, &fragmentShaderCode, NULL);
-//	glCompileShader(fragmentShader);
-//
-//	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-//	if (!success) {
-//		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-//		std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-//	}*/
-//
-//	// create the program and link the program
-//	/*GLuint shaderProgram = glCreateProgram();
-//	glAttachShader(shaderProgram, vertexShader);
-//	glAttachShader(shaderProgram, fragmentShader);
-//	glLinkProgram(shaderProgram);
-//
-//	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-//	if (!success)
-//	{
-//		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-//		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
-//	}
-//	glDeleteShader(vertexShader);
-//	glDeleteShader(fragmentShader);*/
-//
 //	Shader ourShader = Shader("res/shaders/core.vs", "res/shaders/core.fs");
 //
-//	// now the vertex information comes below
-//	//GLfloat vertices[] = {
-//	//	// position             // color
-//	//	-0.5f,-0.5f,0.0f,          1.0f,0.0f,0.0f,
-//	//	0.5f,-0.5f,0.0f,           1.0f,0.0f,0.0f,   
-//	//	0.0f,0.5f,0.0f,            1.0f,0.0f,0.0f
-//	//};
-//
-//	//GLfloat vertices[] = {
-//	//	// position              //color
-//	//	// first triangle
-//	//	0.5f,0.5f,0.0f,          1.0f,0.0f,0.0f,
-//	//	0.5f,-0.5f,0.0f,         1.0f,0.0f,0.0f,
-//	//	-0.5f,0.5f,0.0f,         1.0f,0.0f,0.0f,
-//
-//	//	//second triangle
-//	//	0.5f,-0.5f,0.0f,         1.0f,0.0f,0.0f,
-//	//	-0.5f,-0.5f,0.0f,        1.0f,0.0f,0.0f,
-//	//	-0.5f,0.5f,0.0f,         1.0f,0.0f,0.0f
-//	//};
-//	
 //	GLfloat vertices[] = {
 //		// position           //color
 //		0.5f,0.5f,0.0f,       1.0f,0.0f,0.0f,  //top right
@@ -148,25 +77,23 @@
 //	while (!glfwWindowShouldClose(window))
 //	{
 //		float time = glfwGetTime();
-//		printf("%f\n",time);
+//		// printf("%f\n",time);
 //		float colorValue = sin(time) / 2.0f + 0.5f;//设置颜色值范围0--1
 //		int vertexColorLocation = glGetUniformLocation(ourShader.Program, "ourColor");//获取uniform的位置索引
-//		// glUniform4f(vertexColorLocation, colorValue, 0.0f, 0.0f, 1.0f);//红-黑-红渐变色
-//		if((int)time%2==0)// 红-绿交替出现
-//			glUniform4f(vertexColorLocation, 1.0f, 0.0f, 0.0f, 1.0f);
-//		else
-//			glUniform4f(vertexColorLocation, 0.0f, 1.0f, 0.0f, 1.0f);
-//		glViewport(0, 0, screenWidth, screenHeight);
+//		glUniform4f(vertexColorLocation, colorValue, 0.0f, 0.0f, 1.0f);//红-黑-红渐变色
+//		//if((int)time%2==0)// 红-绿交替出现
+//		//	glUniform4f(vertexColorLocation, 1.0f, 0.0f, 0.0f, 1.0f);
+//		//else
+//		//	glUniform4f(vertexColorLocation, 0.0f, 1.0f, 0.0f, 1.0f);
+//		//glViewport(0, 0, screenWidth, screenHeight);
 //		glfwPollEvents();
 //		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 //		glClear(GL_COLOR_BUFFER_BIT);
 //
-//		/*glUseProgram(shaderProgram);*/
 //		ourShader.Use();
 //		glUniform1f(glGetUniformLocation(ourShader.Program, "time"), time);
 //		glBindVertexArray(VAO);
 //		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-//		/*glDrawArrays(GL_TRIANGLES, 0, 6);*/
 //		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 //		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 //		glBindVertexArray(0);
@@ -177,6 +104,5 @@
 //	glDeleteVertexArrays(1, &VAO);
 //	glDeleteBuffers(1, &VBO);
 //	glDeleteBuffers(1, &EBO);
-//	/*glDeleteProgram(shaderProgram);*/
 //	return 0;
 //}

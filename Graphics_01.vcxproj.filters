@@ -48,6 +48,12 @@
     <ClCompile Include="Graphics_03.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics_04.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -110,6 +116,12 @@
     <ClInclude Include="Camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Moon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Graphics_01.rc">
@@ -121,6 +133,18 @@
       <Filter>源文件\res\shaders</Filter>
     </None>
     <None Include="res\shaders\core.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\light.fs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\light.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\moon.fs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\moon.vs">
       <Filter>源文件\res\shaders</Filter>
     </None>
   </ItemGroup>

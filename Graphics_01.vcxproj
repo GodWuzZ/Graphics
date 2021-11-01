@@ -145,13 +145,17 @@
     <ClCompile Include="Graphics_01.cpp" />
     <ClCompile Include="Graphics_02.cpp" />
     <ClCompile Include="Graphics_03.cpp" />
+    <ClCompile Include="Graphics_04.cpp" />
     <ClCompile Include="SOIL2\image_DXT.c" />
     <ClCompile Include="SOIL2\image_helper.c" />
     <ClCompile Include="SOIL2\SOIL2.c" />
     <ClCompile Include="SOIL2\wfETC.c" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Moon.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="SOIL2\image_DXT.h" />
@@ -178,6 +182,10 @@
   <ItemGroup>
     <None Include="res\shaders\core.fs" />
     <None Include="res\shaders\core.vs" />
+    <None Include="res\shaders\light.fs" />
+    <None Include="res\shaders\light.vs" />
+    <None Include="res\shaders\moon.fs" />
+    <None Include="res\shaders\moon.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\images\01.jpg" />

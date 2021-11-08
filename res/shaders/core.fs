@@ -29,22 +29,22 @@ void main()
 	// color = texture(texture0,ourTextCoord);
 
 	// 第三次作业
-	// color = vec4(vertexColor,1.0f);
+	color = vec4(vertexColor,1.0f);
 
 	// 第四次作业
-	vec3 lightDirection = normalize(LightPos-FragPos);
-	vec3 viewDirection = normalize(ViewPos-FragPos);
-	vec3 norm = normalize(Normal);
+	// vec3 lightDirection = normalize(LightPos-FragPos);
+	// vec3 viewDirection = normalize(ViewPos-FragPos);
+	// vec3 norm = normalize(Normal);
 	//ambient
-	vec3 ambient = 0.2f * vertexColor;
+	// vec3 ambient = 0.2f * vertexColor;
 	//diffuse
-	float diff = material.diffuse * max(dot(norm,lightDirection),0.0f);
-	vec3 diffuse = diff * vertexColor;
+	// float diff = material.diffuse * max(dot(norm,lightDirection),0.0f);
+	// vec3 diffuse = diff * vertexColor;
 	//specular
-	vec3 halfAngle = normalize(viewDirection + lightDirection);
-	float spec = material.specular * pow(max(dot(norm,halfAngle),0.0f),64.0f);
-	vec3 specular = spec * vertexColor;
+	// vec3 halfAngle = normalize(viewDirection + lightDirection);
+	// float spec = material.specular * pow(max(dot(norm,halfAngle),0.0f),64.0f);
+	// vec3 specular = spec * vertexColor;
 
-	color = vec4(ambient + diffuse + specular, 1.0f);
+	// color = vec4(ambient + diffuse + specular, 1.0f);
 
 };

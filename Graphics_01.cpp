@@ -1,10 +1,10 @@
 ﻿//#include<iostream>
 //
-////GLEW
+//GLEW
 //#define GLEW_STATIC
 //#include<GL/glew.h>
 //
-////GLFW
+//GLFW
 //#include<GLFW/glfw3.h>
 //#include "Shader.h"
 //
@@ -19,7 +19,7 @@
 //	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 //
 //	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "GOD MA", nullptr, nullptr);
-//	// next two lines are for mac retina display
+//	 next two lines are for mac retina display
 //	int screenWidth, screenHeight;
 //	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
 //
@@ -36,10 +36,10 @@
 //		return -1;
 //	}
 //
-//	Shader ourShader = Shader("res/shaders/core.vs", "res/shaders/core.fs");
+//	Shader ourShader = Shader("res/shaders/core1.vs", "res/shaders/core1.fs");
 //
 //	GLfloat vertices[] = {
-//		// position           //color
+//		 position           //color
 //		0.5f,0.5f,0.0f,       1.0f,0.0f,0.0f,  //top right
 //		0.5f,-0.5f,0.0f,      1.0f,0.0f,0.0f,   //bottom right
 //		-0.5f,-0.5f,0.0f,     1.0f,0.0f,0.0f,  //bottom left
@@ -51,16 +51,16 @@
 //		1,2,3
 //	};
 //
-//	// the data should be transfered to the memory on Graphics Card
+//	 the data should be transfered to the memory on Graphics Card
 //	GLuint VAO, VBO;
 //	glGenVertexArrays(1, &VAO);
 //	glGenBuffers(1, &VBO);
-//	// connect the VAO and VBO
+//	 connect the VAO and VBO
 //	glBindVertexArray(VAO);
 //	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-//	// transfer the data
+//	 transfer the data
 //	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-//	// set the attribute
+//	 set the attribute
 //	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
 //	glEnableVertexAttribArray(0);
 //	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)(3*sizeof(GLfloat)));
@@ -77,15 +77,15 @@
 //	while (!glfwWindowShouldClose(window))
 //	{
 //		float time = glfwGetTime();
-//		// printf("%f\n",time);
+//		 printf("%f\n",time);
 //		float colorValue = sin(time) / 2.0f + 0.5f;//设置颜色值范围0--1
 //		int vertexColorLocation = glGetUniformLocation(ourShader.Program, "ourColor");//获取uniform的位置索引
-//		glUniform4f(vertexColorLocation, colorValue, 0.0f, 0.0f, 1.0f);//红-黑-红渐变色
-//		//if((int)time%2==0)// 红-绿交替出现
-//		//	glUniform4f(vertexColorLocation, 1.0f, 0.0f, 0.0f, 1.0f);
-//		//else
-//		//	glUniform4f(vertexColorLocation, 0.0f, 1.0f, 0.0f, 1.0f);
-//		//glViewport(0, 0, screenWidth, screenHeight);
+//		 glUniform4f(vertexColorLocation, colorValue, 0.0f, 0.0f, 1.0f);//红-黑-红渐变色
+//		if((int)time%2==0)// 红-绿交替出现
+//			glUniform4f(vertexColorLocation, 1.0f, 0.0f, 0.0f, 1.0f);
+//		else
+//			glUniform4f(vertexColorLocation, 0.0f, 1.0f, 0.0f, 1.0f);
+//		glViewport(0, 0, screenWidth, screenHeight);
 //		glfwPollEvents();
 //		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 //		glClear(GL_COLOR_BUFFER_BIT);

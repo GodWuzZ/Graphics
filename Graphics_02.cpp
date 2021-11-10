@@ -41,7 +41,7 @@
 //		return -1;
 //	}
 //
-//	Shader ourShader = Shader("res/shaders/core.vs", "res/shaders/core.fs");
+//	Shader ourShader = Shader("res/shaders/core2.vs", "res/shaders/core2.fs");
 //
 //	// now the vertex information comes below
 //	GLfloat vertices[] = {

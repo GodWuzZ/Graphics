@@ -126,12 +126,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\shaders\core.fs">
-      <Filter>源文件\res\shaders</Filter>
-    </None>
-    <None Include="res\shaders\core.vs">
-      <Filter>源文件\res\shaders</Filter>
-    </None>
     <None Include="res\shaders\light.fs">
       <Filter>源文件\res\shaders</Filter>
     </None>
@@ -142,6 +136,30 @@
       <Filter>源文件\res\shaders</Filter>
     </None>
     <None Include="res\shaders\moon.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core1.fs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core1.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core3.fs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core3.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core4.fs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core4.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core2.vs">
+      <Filter>源文件\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\core2.fs">
       <Filter>源文件\res\shaders</Filter>
     </None>
   </ItemGroup>

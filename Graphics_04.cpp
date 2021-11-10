@@ -70,7 +70,7 @@
 //	glEnable(GL_BLEND);
 //	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 //
-//	Shader ourShader = Shader("res/shaders/core.vs", "res/shaders/core.fs");
+//	Shader ourShader = Shader("res/shaders/core4.vs", "res/shaders/core4.fs");
 //	Shader lightShader = Shader("res/shaders/light.vs", "res/shaders/light.fs");
 //
 //	Light lightModel = Light();

@@ -179,8 +179,14 @@
     <ResourceCompile Include="Graphics_01.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\shaders\core.fs" />
-    <None Include="res\shaders\core.vs" />
+    <None Include="res\shaders\core1.fs" />
+    <None Include="res\shaders\core1.vs" />
+    <None Include="res\shaders\core2.fs" />
+    <None Include="res\shaders\core2.vs" />
+    <None Include="res\shaders\core3.fs" />
+    <None Include="res\shaders\core3.vs" />
+    <None Include="res\shaders\core4.fs" />
+    <None Include="res\shaders\core4.vs" />
     <None Include="res\shaders\light.fs" />
     <None Include="res\shaders\light.vs" />
     <None Include="res\shaders\moon.fs" />

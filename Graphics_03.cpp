@@ -67,7 +67,7 @@ int main() {
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	Shader ourShader = Shader("res/shaders/core.vs", "res/shaders/core.fs");
+	Shader ourShader = Shader("res/shaders/core3.vs", "res/shaders/core3.fs");
 	Shader moonShader = Shader("res/shaders/moon.vs", "res/shaders/moon.fs");
 
 	Moon moonModel = Moon();

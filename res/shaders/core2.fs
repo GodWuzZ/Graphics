@@ -5,25 +5,13 @@ in vec2 ourTextCoord;
 in vec3 Normal;
 in vec3 FragPos;
 
-uniform float time;
+uniform float value;
 uniform vec4 ourColor;
 uniform sampler2D texture0;
-uniform vec3 LightPos;
-uniform vec3 ViewPos;
-
-struct Material{
-	float diffuse;
-	float specular;
-};
-
-uniform Material material;
+uniform sampler2D texture1;
 
 void main()
 {
-
 	// 第二次作业
-	color = texture(texture0,ourTextCoord);
-
-	
-
+	color = mix(texture(texture0,ourTextCoord),texture(texture1,ourTextCoord),value);
 };
